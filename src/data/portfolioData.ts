@@ -191,7 +191,7 @@ export const portfolioData: PortfolioData = {
       description:
         'Mobile computer vision system that detects and classifies microscopic blood cell regions on resource-constrained smartphones using optimized multi-template matching.',
       tags: ['Python', 'Kotlin', 'Template Matching', 'TensorFlow/Keras', 'Computer Vision'],
-      category: 'Computer Vision & AI',
+      category: 'Computer Vision & Machine Learning',
       featured: true,
       logo: '/assets/logo/mandiri.png',
       caseStudy: {
@@ -310,7 +310,7 @@ export const portfolioData: PortfolioData = {
       description:
         'Hybrid computer vision pipeline combining ResNet-50 spatial feature maps with Vision Transformer (ViT) self-attention blocks for image classification.',
       tags: ['Computer Vision', 'Python', 'TensorFlow', 'OpenCV', 'ResNet-50', 'ViT'],
-      category: 'Computer Vision & AI',
+      category: 'Computer Vision & Machine Learning',
       featured: false,
       logo: '/assets/logo/mandiri.png',
     },

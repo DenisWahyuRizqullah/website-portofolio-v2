@@ -26,13 +26,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Editor, IDE & AI Assistant directories
+# Editor & IDE directories
 .vscode/*
 !.vscode/extensions.json
 .idea/
-.qodo/
-.gemini/
-.taste-skill/
 *.suo
 *.ntvs*
 *.njsproj

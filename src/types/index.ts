@@ -31,7 +31,7 @@ export interface ProjectCaseStudy {
   reportLabel?: string;
 }
 
-export type ProjectCategory = 'IoT & Embedded' | 'Computer Vision & AI' | 'Web Platform';
+export type ProjectCategory = 'IoT & Embedded' | 'Computer Vision & Machine Learning' | 'Web Platform';
 
 export interface ProjectItem {
   id: number;

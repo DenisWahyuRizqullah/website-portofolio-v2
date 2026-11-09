@@ -81,7 +81,7 @@ export const ProjectVisualFrame: React.FC<{ project: ProjectItem }> = ({ project
     );
   }
 
-  // Taste-skill rule #7: Clean architectural diagram visual for cards without photographs
+  // Fallback architectural schematic diagram for projects without photography
   return (
     <div className="relative mb-5 flex h-48 w-full items-center justify-center overflow-hidden rounded-2xl border border-[var(--border-hairline)] bg-[var(--bg-subtle)] p-6">
       <svg

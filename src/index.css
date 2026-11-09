@@ -6,7 +6,7 @@
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 
-    /* Apple Cupertino Light Mode (Pure White & Soft Frost) */
+    /* Light Theme Tokens */
     --bg-canvas: #f5f5f7;
     --bg-sidebar: rgba(255, 255, 255, 0.82);
     --bg-header: rgba(245, 245, 247, 0.78);
@@ -32,7 +32,7 @@
   }
 
   [data-theme="dark"] {
-    /* Apple Cupertino Dark Mode (macOS Sequoia / iOS Dark) */
+    /* Dark Theme Tokens */
     --bg-canvas: #000000;
     --bg-sidebar: rgba(24, 24, 27, 0.82);
     --bg-header: rgba(0, 0, 0, 0.75);
@@ -70,7 +70,7 @@
   }
 }
 
-/* Cupertino Card & Surface Utilities */
+/* Card & Surface Utilities */
 .cupertino-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-hairline);
@@ -130,7 +130,7 @@
   transform: translateY(0) scale(0.98);
 }
 
-/* Custom thin Cupertino scrollbar */
+/* Custom scrollbar */
 .workstation-scroll {
   scrollbar-width: thin;
   scrollbar-color: var(--border-strong) transparent;

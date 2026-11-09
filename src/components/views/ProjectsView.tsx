@@ -16,7 +16,7 @@ import { Badge, Card, ProjectVisualFrame, SectionHeader } from '../ui/primitives
 const CATEGORIES: ('All' | ProjectCategory)[] = [
   'All',
   'IoT & Embedded',
-  'Computer Vision & AI',
+  'Computer Vision & Machine Learning',
   'Web Platform',
 ];
 
@@ -38,7 +38,7 @@ export const ProjectsView: React.FC = () => {
         subtitle="Select any card to read the complete engineering case study, methodology, and field documentation."
       />
 
-      {/* Apple Cupertino Segmented Pill Filter */}
+      {/* Category Filter Pills */}
       <div className="inline-flex flex-wrap items-center gap-1.5 rounded-full border border-[var(--border-hairline)] bg-[var(--bg-card)] p-1.5 shadow-2xs">
         {CATEGORIES.map((category) => {
           const isActive = selectedCategory === category;
@@ -59,7 +59,7 @@ export const ProjectsView: React.FC = () => {
         })}
       </div>
 
-      {/* 2-Column Cupertino Showcase Grid */}
+      {/* Projects Grid */}
       <div className="grid gap-7 md:grid-cols-2">
         {filteredProjects.map((project) => (
           <Card
@@ -109,7 +109,7 @@ export const ProjectsView: React.FC = () => {
         ))}
       </div>
 
-      {/* Cupertino Sheet Modal for Case Study */}
+      {/* Case Study Modal */}
       {activeProject && activeProject.caseStudy && (
         <div
           role="dialog"

@@ -27,7 +27,7 @@ export const ScreenFrame: React.FC<ScreenFrameProps> = ({ activeTab, children })
       ref={mainRef}
       className="workstation-scroll relative flex-1 overflow-y-auto overscroll-contain bg-[var(--bg-canvas)] pb-28 md:pb-16"
     >
-      {/* Subtle Cupertino Frosted Top Bar */}
+      {/* Top Header Bar */}
       <div className="sticky top-0 z-20 hidden items-center justify-between border-b border-[var(--border-hairline)] bg-[var(--bg-header)] px-10 py-3.5 backdrop-blur-xl md:flex">
         <div className="text-xs font-semibold tracking-tight text-[var(--text-secondary)]">
           {SECTION_TITLES[activeTab]}
@@ -37,7 +37,7 @@ export const ScreenFrame: React.FC<ScreenFrameProps> = ({ activeTab, children })
         </div>
       </div>
 
-      {/* Main Content Canvas with Equal Edges */}
+      {/* Main Content Viewport */}
       <div className="mx-auto max-w-[1040px] px-6 pt-8 sm:px-10 md:pt-12 lg:px-14">
         <AnimatePresence mode="wait">
           <motion.div

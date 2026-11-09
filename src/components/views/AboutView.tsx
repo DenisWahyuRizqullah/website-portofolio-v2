@@ -14,7 +14,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
 
   return (
     <div className="space-y-10">
-      {/* Apple Cupertino Luminescence Hero Card */}
+      {/* Hero Card */}
       <Card className="p-8 sm:p-12">
         <div className="text-xs font-bold tracking-[0.08em] text-[var(--accent)] uppercase">
           {profile.role} • {profile.degree}
@@ -87,7 +87,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
         </div>
       </Card>
 
-      {/* Featured Showcase Grid (Cupertino Device Cards) */}
+      {/* Featured Showcase Grid */}
       <div>
         <div className="mb-5 flex items-end justify-between">
           <div>

@@ -40,7 +40,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <>
-      {/* Mobile Top Cupertino Bar */}
+      {/* Mobile Top Bar */}
       <div className="flex items-center justify-between border-b border-[var(--border-hairline)] bg-[var(--bg-sidebar)] px-4 py-3 backdrop-blur-xl md:hidden">
         <div className="flex items-center gap-3">
           <img
@@ -68,7 +68,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </button>
       </div>
 
-      {/* Desktop Left Cupertino Vibrancy Sidebar (<aside>) */}
+      {/* Desktop Navigation Sidebar (<aside>) */}
       <aside
         aria-label="Primary Navigation Sidebar"
         className="hidden h-full w-[288px] shrink-0 flex-col justify-between border-r border-[var(--border-hairline)] bg-[var(--bg-sidebar)] p-6 backdrop-blur-2xl md:flex"
@@ -146,7 +146,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         {/* Bottom Controls: Theme Segmented Switcher, Resume & Socials */}
         <div className="space-y-4 border-t border-[var(--border-hairline)] pt-5">
-          {/* Apple Cupertino Dual-Mode Segmented Control */}
+          {/* Theme Mode Segmented Control */}
           <div
             role="group"
             aria-label="Appearance Mode"

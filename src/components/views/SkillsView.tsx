@@ -37,7 +37,7 @@ export const SkillsView: React.FC = () => {
         subtitle="A multidisciplinary foundation combining embedded hardware, machine learning, and modern web interfaces."
       />
 
-      {/* 3 Apple Feature Pillars */}
+      {/* Core Engineering Pillars */}
       <div className="grid gap-6 md:grid-cols-3">
         {PILLARS.map((pillar) => {
           const Icon = pillar.icon;
