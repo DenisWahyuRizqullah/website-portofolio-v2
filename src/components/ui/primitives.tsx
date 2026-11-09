@@ -7,14 +7,27 @@ interface CardProps {
   onClick?: () => void;
 }
 
-export const Card: React.FC<CardProps> = ({ children, className = '', onClick }) => (
-  <div
-    onClick={onClick}
-    className={`cupertino-card ${onClick ? 'cupertino-card-interactive group' : ''} ${className}`}
-  >
-    {children}
-  </div>
-);
+export const Card: React.FC<CardProps> = ({ children, className = '', onClick }) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (!onClick) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onClick();
+    }
+  };
+
+  return (
+    <div
+      role={onClick ? 'button' : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      onClick={onClick}
+      onKeyDown={onClick ? handleKeyDown : undefined}
+      className={`cupertino-card ${onClick ? 'cupertino-card-interactive group cursor-pointer' : ''} ${className}`}
+    >
+      {children}
+    </div>
+  );
+};
 
 interface BadgeProps {
   children: React.ReactNode;

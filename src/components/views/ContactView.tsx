@@ -94,7 +94,7 @@ export const ContactView: React.FC = () => {
 
           <div className="mt-6">
             <a
-              href="https://wa.me/6282331603633"
+              href={`https://wa.me/${profile.phone.replace(/\D/g, '')}`}
               target="_blank"
               rel="noreferrer"
               className="cupertino-btn-secondary inline-flex w-full items-center justify-center gap-2 px-4 py-2.5 text-xs"

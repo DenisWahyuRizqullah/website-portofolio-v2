@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Calendar,
   MapPin,
@@ -24,6 +24,19 @@ export const ProjectsView: React.FC = () => {
   const { projects } = portfolioData;
   const [selectedCategory, setSelectedCategory] = useState<'All' | ProjectCategory>('All');
   const [activeProject, setActiveProject] = useState<ProjectItem | null>(null);
+
+  useEffect(() => {
+    if (!activeProject) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setActiveProject(null);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeProject]);
 
   const filteredProjects =
     selectedCategory === 'All'
